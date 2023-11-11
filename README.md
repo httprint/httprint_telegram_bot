@@ -15,8 +15,8 @@ Add following settings to your`docker-compose.yml` file:
     build: https://github.com/httprint/httprint_telegram_bot.git
     container_name: httprint_telegram_bot  # optional
     environment:
-      - TELEGRAM_TOKE" # telegram bot token
-      - HTTPRINT_HOST=https://httprint:7777 # optional, defaults to http://localhost:7777
+      - TELEGRAM_TOKEN=xxxxxxx # telegram bot token
+      - HTTPRINT_HOST=http://httprint.example.com:7777 # optional, defaults to http://httprint:7777
       - LOG_LEVEL=DEBUG  # optional, defaults to INFO
     restart: unless-stopped
   ```
